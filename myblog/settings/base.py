@@ -25,7 +25,7 @@ BASE_DIR = os.path.dirname(PROJECT_DIR)
 
 # Application definition
 
-INSTALLED_APPS = [
+PRE_INSTALLED_APPS = [
     'home',
     'search',
 
@@ -51,6 +51,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
+
+CUSTOM_APPS = [
+    'blog',
+]
+
+INSTALLED_APPS = PRE_INSTALLED_APPS + CUSTOM_APPS
 
 MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware',
